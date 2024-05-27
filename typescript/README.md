@@ -956,7 +956,7 @@ class Employee implements Person {
   greet() {
     console.log(`Hello, my name is ${this.name}`);
   }
-}
+};
 
 let john = new Employee('John');
 john.greet(); // Outputs: Hello, my name is John
