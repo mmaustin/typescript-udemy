@@ -253,6 +253,15 @@
 // console.log(createArray<string>(4, 'hello'));
 
 
+const fizzBuzz = (num:number):void => {
+  for(let i:number = 0; i <= num; i++){  
+    let str:string = '';
+    if(i % 5 === 0) str += 'Fizz';
+    if(i % 3 === 0) str += 'Buzz';
+    console.log(str || i);
+  };
+};
+fizzBuzz(15);
 
 
 
