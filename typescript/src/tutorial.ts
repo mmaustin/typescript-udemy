@@ -262,6 +262,3 @@ const fizzBuzz = (num:number):void => {
   };
 };
 fizzBuzz(15);
-
-
-
