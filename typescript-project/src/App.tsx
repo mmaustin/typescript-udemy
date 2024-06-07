@@ -1,6 +1,12 @@
-import {Button} from '@/components/ui/button'
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
+import {Button} from '@/components/ui/button';
+import { useAppSelector } from './hooks';
+
 
 const App = () => {
+  const { name } = useAppSelector((state) => state.cartState);
+  console.log(name);
 
   const flx = ():void =>{
     console.log('it works'); 
