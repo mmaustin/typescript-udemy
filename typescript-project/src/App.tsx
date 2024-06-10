@@ -1,23 +1,25 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
-import {Button} from '@/components/ui/button';
-import { useAppSelector } from './hooks';
 
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { Cart, Error, About, Checkout, HomeLayout, Landing, Login, Orders, Products, Register, SingleProduct } from './pages';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Landing />
+  },
+  {
+    path: '/cart',
+    element: <Cart />
+  },
+]);
 
 const App = () => {
-  const { name } = useAppSelector((state) => state.cartState);
-  console.log(name);
-
-  const flx = ():void =>{
-    console.log('it works'); 
-  };
-
+  
 
   return (
-    <div className="">
-      <h1 className='text-7xl font-bold text-red-400'>App</h1>
-      <Button variant='destructive' size='lg' onClick={flx}>Click Here</Button>
-    </div>
+    <RouterProvider router={router} />
   )
 };
 export default App;
