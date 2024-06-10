@@ -6,11 +6,14 @@ import { Button } from "./ui/button";
 
 const Header = () => {
 
+  const navigate = useNavigate();
+
   const [user, setUser] = useState<{username: string} | null>({username: 'Big Dogg'})
 console.log(user);
 
   const handleLogout = () => {
-    setUser(null); 
+    setUser(null);
+    navigate('/');
   };
 
   return (

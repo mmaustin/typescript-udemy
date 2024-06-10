@@ -9,7 +9,9 @@ const HomeLayout = () => {
       <nav>
         Navbar
       </nav>
-      <Outlet />
+      <div className="align-element py-20">
+        <Outlet />
+      </div>
     </>
   )
 }

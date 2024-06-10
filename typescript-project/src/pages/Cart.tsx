@@ -7,9 +7,11 @@ const Cart = () => {
     <div className=" flex flex-col">
       <h3 className=" text-2xl ">Cart</h3>
       <Link to='/'>Home</Link>
-      <Button asChild size='default' >
+      <div className="">
+      <Button asChild size='sm' >
         <Link to='/'>Home Button</Link>
       </Button>
+      </div>
     </div>
   )
 };
