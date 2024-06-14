@@ -9,7 +9,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   const [user, setUser] = useState<{username: string} | null>({username: 'Big Dogg'})
-console.log(user);
+
 
   const handleLogout = () => {
     setUser(null);
