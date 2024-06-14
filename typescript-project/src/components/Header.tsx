@@ -18,10 +18,10 @@ const Header = () => {
 
   return (
     <header>
-      <div className="flex align-element justify-end md:justify-center py-2">
+      <div className="make-red flex align-element justify-end md:justify-center py-2">
         {user ? (
           <div className='flex gap-x-2 sm:gap-x-8 items-center'>
-            <p className='md:text-xs text-sm'>Hello, {user.username}</p>
+            <p className='md:text-xs text-sm md:text-blue-600'>Hello, {user.username}</p>
             <Button variant='link' size='sm' onClick={handleLogout}>
               Logout
             </Button>

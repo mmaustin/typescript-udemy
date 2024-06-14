@@ -1,4 +1,10 @@
-import {Logo, LinksDropdown, NavLinks, NodeToggle, CartButton} from '.'
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
+import CartButton from "./CartButton";
+import LinksDropdown from "./LinksDropdown";
+import Logo from "./Logo";
+import NavLinks from "./NavLinks";
+import NodeToggle from "./NodeToggle";
 
 
 const Navbar = () => {
