@@ -253,12 +253,27 @@
 // console.log(createArray<string>(4, 'hello'));
 
 
-const fizzBuzz = (num:number):void => {
-  for(let i:number = 0; i <= num; i++){  
-    let str:string = '';
-    if(i % 5 === 0) str += 'Fizz';
-    if(i % 3 === 0) str += 'Buzz';
-    console.log(str || i);
-  };
+// const fizzBuzz = (num:number):void => {
+//   for(let i:number = 0; i <= num; i++){  
+//     let str:string = '';
+//     if(i % 5 === 0) str += 'Fizz';
+//     if(i % 3 === 0) str += 'Buzz';
+//     console.log(str || i);
+//   };
+// };
+// fizzBuzz(15);
+
+interface L {
+  length: number,
+  toUpperCase(): string,
+  slice(arg:number, arg2?: number): string,
+  // How To???
+  // split()
 };
-fizzBuzz(15);
+
+const compile = <T extends L>(arg: T): void => {
+  console.log( arg.slice(1));
+  
+  //return arg.length;
+};
+console.log(compile('ppp'));
