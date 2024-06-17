@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { Cart, Error, About, Checkout, HomeLayout, Landing, Login, Orders, Products, Register, SingleProduct } from './pages';
@@ -8,6 +6,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <HomeLayout />,
+    errorElement: <Error />,
     children: [
       {
         index: true,
@@ -41,11 +40,13 @@ const router = createBrowserRouter([
   },
   {
     path: '/login',
-    element: <Login />
+    element: <Login />,
+    errorElement: <Error />
   },
   {
     path: '/register',
-    element: <Register />
+    element: <Register />,
+    errorElement: <Error />
   },
 ]);
 
